@@ -1,0 +1,10 @@
+<h1>Trending</h1>
+<div class="container">
+  <mat-card *ngFor="let movie of movies">
+    <img src="https://image.tmdb.org/t/p/w500{{movie.poster_path}}" alt="image">
+    <div class="overlay">
+      <p class="text">{{movie.overview}}</p>
+    </div>
+    <h2>{{movie.title}}</h2>
+  </mat-card>
+</div>

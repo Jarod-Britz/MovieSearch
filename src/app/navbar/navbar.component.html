@@ -1,0 +1,23 @@
+<mat-toolbar>
+  <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item routerLink="">
+      <mat-icon>favorite</mat-icon>
+      <span>Popular</span>
+    </button>
+    <button mat-menu-item routerLink="trending">
+      <mat-icon>whatshot</mat-icon>
+      <span>Trending</span>
+    </button>
+    <button mat-menu-item routerLink="comingsoon">
+      <mat-icon>date_range</mat-icon>
+      <span>Coming Soon</span>
+    </button>
+    <button mat-menu-item routerLink="nowplaying">
+      <mat-icon>theaters</mat-icon>
+      <span>Now Playing</span>
+    </button>
+  </mat-menu>
+</mat-toolbar>

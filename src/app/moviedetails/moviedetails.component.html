@@ -1,0 +1,26 @@
+
+<!-- <mat-card *ngIf="movieService.details != null">
+    <div class="col-sm">
+        <img src="https://image.tmdb.org/t/p/w500{{selectedMovie.poster_path}}" alt="image">
+    </div>
+ 
+    <div class="col-sm" class="details">
+        <h1>{{selectedMovie.title}}</h1>
+        <p>{{selectedMovie.overview}}</p>
+        <h2>Release Date</h2>
+        <span>{{selectedMovie.release_date}}</span>
+    </div>
+</mat-card> -->
+
+<div class="row">
+<div class="col">
+    <img src="https://image.tmdb.org/t/p/w500{{selectedMovie.poster_path}}" alt="image">
+</div>
+
+<div class="col">
+    <h1>{{selectedMovie.title}}</h1>
+    <p>{{selectedMovie.overview}}</p>
+    <h2>Release Date</h2>
+    <span>{{selectedMovie.release_date}}</span>
+</div>
+</div>

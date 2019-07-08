@@ -1,0 +1,66 @@
+h1{
+    text-align: center;
+}
+.container{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+mat-card{
+    width: 300px;
+    margin: 2% auto;
+}
+mat-card:hover{
+    cursor: pointer;
+}
+mat-card:hover img{
+    transition: .2s ease;
+    opacity: 0.2;
+}
+img{
+    width: 300px;
+    margin: 0;
+    padding: 0;
+}
+h2{
+    color: darkred;
+}
+.text{
+    opacity: 0;
+    position: absolute;
+    top: 15%;
+    left: 0;
+    text-align: center;
+    font-size: 18px;
+    margin: 5%;
+}
+
+mat-card:hover .text{
+    opacity: 1;
+}
+
+
+@media screen and (max-width: 1400px){
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+}
+
+@media screen and (max-width: 1050px){
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+}
