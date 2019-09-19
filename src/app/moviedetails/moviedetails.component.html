@@ -1,26 +1,21 @@
 
-<!-- <mat-card *ngIf="movieService.details != null">
-    <div class="col-sm">
+
+<mat-icon (click)="backClicked()" class="back">arrow_back</mat-icon>
+<div class="container">
+    <div>
         <img src="https://image.tmdb.org/t/p/w500{{selectedMovie.poster_path}}" alt="image">
     </div>
- 
-    <div class="col-sm" class="details">
+    
+    <div>
         <h1>{{selectedMovie.title}}</h1>
+        <h2><mat-icon>star</mat-icon>{{selectedMovie.vote_average}}</h2>
+        <h2>THE SYNOPSIS</h2>
         <p>{{selectedMovie.overview}}</p>
-        <h2>Release Date</h2>
-        <span>{{selectedMovie.release_date}}</span>
+        <h2>{{selectedMovie.release_date}}</h2>
     </div>
-</mat-card> -->
-
-<div class="row">
-<div class="col">
-    <img src="https://image.tmdb.org/t/p/w500{{selectedMovie.poster_path}}" alt="image">
 </div>
 
-<div class="col">
-    <h1>{{selectedMovie.title}}</h1>
-    <p>{{selectedMovie.overview}}</p>
-    <h2>Release Date</h2>
-    <span>{{selectedMovie.release_date}}</span>
+<div>
+
 </div>
-</div>
+

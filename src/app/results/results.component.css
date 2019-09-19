@@ -1,3 +1,12 @@
+.back{
+    margin-left: 4%;
+    font-size: 40px;
+    cursor: pointer;
+}
+button{
+    border: none;
+    background-color: rgb(247, 247, 247);
+}
 h1{
     text-align: center;
 }
@@ -36,12 +45,39 @@ h2{
     left: 0;
     text-align: center;
     font-size: 18px;
-    margin: 10%;
+    margin: 5%;
 }
 
 mat-card:hover .text{
     opacity: 1;
 }
+
+button{
+    border: none;
+    background-color: rgb(247, 247, 247);
+}
+mat-toolbar{
+    position: sticky;
+    margin: 0;
+    top: 7px;
+    z-index: 1;
+}
+.container{
+    float: right;
+}
+.container input{
+    border-radius: 12px;
+    height: 20px;
+    width: 200px;
+    padding: 5px;
+}
+.example-icon {
+    padding: 0 14px;
+  }
+  
+  .example-spacer {
+    flex: 1 1 auto;
+  }
 
 
 @media screen and (max-width: 1400px){

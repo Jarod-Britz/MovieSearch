@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MovieService } from '../services/movie.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-nowplaying',
@@ -9,16 +10,23 @@ import { MovieService } from '../services/movie.service';
 export class NowplayingComponent implements OnInit {
 movies;
 
-  constructor(private movieService: MovieService) { }
+  constructor(private movieService: MovieService,
+              private router: Router) { }
 
   ngOnInit() {
     this.movieService.getTrendingMovies()
     .subscribe((data) => {
       this.movies = data['results'];
-      console.log(this.movies);
       
       
     })
   }
+
+  getMovieID(movie){
+
+    this.movieService.getMovieID(movie);
+    this.router.navigate(['/movie-details']);
+
+}
 
 }

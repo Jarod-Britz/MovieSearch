@@ -1,5 +1,7 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { MovieService } from '../services/movie.service';
+import { Router} from '@angular/router';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-navbar',
@@ -9,21 +11,25 @@ import { MovieService } from '../services/movie.service';
 export class NavbarComponent implements OnInit {
   movies;
   movieName: string;
-
   @Output() featureSelected = new EventEmitter<string>();
 
-  constructor(private movieService: MovieService) { }
+  constructor(private movieService: MovieService,
+              private router: Router) { }
 
   ngOnInit() {
   }
 
-  search() {
-    this.movieService.getMovies(this.movieName).subscribe((data) => {
-      this.movies = data['results'];
-      console.log(this.movies);
+  // search() {
+  //   this.movieService.getResults(this.movieName).subscribe((data) => {
+  //     this.movies = data['results'];
+  //     this.router.navigate(['results'])
+  //     console.log(this.movies);
 
-      localStorage.setItem("movies", JSON.stringify(this.movies))
-    })
+  //   })
+  // }
+
+  getResults() {
+    this.router.navigate(["results"]);
   }
 
 }

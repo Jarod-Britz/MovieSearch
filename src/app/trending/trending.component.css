@@ -10,7 +10,11 @@ h1{
 mat-card{
     width: 300px;
     margin: 2% auto;
-
+    transition: all .2s ease-in-out;
+}
+mat-card:hover{
+    cursor: pointer;
+    transform: scale(1.05);
 }
 mat-card:hover img{
     transition: .2s ease;
@@ -25,11 +29,11 @@ img{
 .text{
     opacity: 0;
     position: absolute;
-    top: 20%;
+    top: 10%;
     left: 0;
     text-align: center;
     font-size: 18px;
-    margin: 5%;
+    margin: 10%;
 }
 
 mat-card:hover .text{

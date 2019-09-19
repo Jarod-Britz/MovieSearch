@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MovieService } from '../services/movie.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-comingsoon',
@@ -9,15 +10,22 @@ import { MovieService } from '../services/movie.service';
 export class ComingsoonComponent implements OnInit {
   movies;
 
-  constructor(private movieService: MovieService) { }
+  constructor(private movieService: MovieService,
+              private router: Router) { }
 
   ngOnInit() {
     this.movieService.getComingSoonMovies()
     .subscribe((data) => {
       this.movies = data['results'];
-       console.log(this.movies);
 
     })
   }
+
+  getMovieID(movie){
+
+    this.movieService.getMovieID(movie);
+    this.router.navigate(['/movie-details']);
+
+}
 
 }

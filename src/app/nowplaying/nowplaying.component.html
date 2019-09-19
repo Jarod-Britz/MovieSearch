@@ -1,6 +1,7 @@
+
 <h1>Now Playing</h1>
 <div class="container">
-  <mat-card *ngFor="let movie of movies">
+  <mat-card *ngFor="let movie of movies" (click)="getMovieID(movie)">
     <img src="https://image.tmdb.org/t/p/w500{{movie.poster_path}}" alt="image">
     <div class="overlay">
       <p class="text">{{movie.overview}}</p>

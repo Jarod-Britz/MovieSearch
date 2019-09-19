@@ -17,6 +17,8 @@ import { NowplayingComponent } from './nowplaying/nowplaying.component';
 import { HomeComponent } from './home/home.component';
 import { MovieService } from './services/movie.service';
 import { MoviedetailsComponent } from './moviedetails/moviedetails.component';
+import { FormsModule } from '@angular/forms';
+import { ResultsComponent } from './results/results.component';
 
 
 @NgModule({
@@ -27,10 +29,12 @@ import { MoviedetailsComponent } from './moviedetails/moviedetails.component';
     ComingsoonComponent,
     NowplayingComponent,
     HomeComponent,
-    MoviedetailsComponent
+    MoviedetailsComponent,
+    ResultsComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
     AppRoutingModule,

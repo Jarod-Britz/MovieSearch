@@ -8,3 +8,19 @@ mat-toolbar{
     top: 0;
     z-index: 1;
 }
+.container{
+    float: right;
+}
+.container input{
+    border-radius: 12px;
+    height: 20px;
+    width: 200px;
+    padding: 5px;
+}
+.example-icon {
+    padding: 0 14px;
+  }
+  
+  .example-spacer {
+    flex: 1 1 auto;
+  }

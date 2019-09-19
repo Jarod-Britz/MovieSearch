@@ -20,4 +20,9 @@
       <span>Now Playing</span>
     </button>
   </mat-menu>
+  <span class="example-spacer"></span>
+  <div class="container">
+    <input type="text" placeholder="Search..." [(ngModel)]="movieName">
+    <button mat-stroked-button (click)="getResults()">Search</button>
+  </div>
 </mat-toolbar>
