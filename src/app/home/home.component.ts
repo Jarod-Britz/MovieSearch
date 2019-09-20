@@ -41,13 +41,13 @@ cast;
 
 }
 
-// search() {
-//   this.movieService.getResults(this.movieName).subscribe((data) => {
-//     this.movies = data['results'];
-//     console.log(this.movies);
+search() {
+  this.movieService.getResults(this.movieName).subscribe((data) => {
+    this.movies = data['results'];
+    console.log(this.movies);
 
-//     localStorage.setItem("movies", JSON.stringify(this.movies))
-//   })
-// }
+    localStorage.setItem("movies", JSON.stringify(this.movies))
+  })
+}
 
 }

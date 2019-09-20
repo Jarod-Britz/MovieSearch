@@ -15,6 +15,7 @@ mat-card{
 mat-card:hover{
     cursor: pointer;
     transform: scale(1.05);
+    box-shadow: 0 5px 20px 1px rgb(168, 168, 168), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12)!important;
 }
 mat-card:hover img{
     transition: .2s ease;

@@ -16,9 +16,9 @@ import { ComingsoonComponent } from './comingsoon/comingsoon.component';
 import { NowplayingComponent } from './nowplaying/nowplaying.component';
 import { HomeComponent } from './home/home.component';
 import { MovieService } from './services/movie.service';
-import { MoviedetailsComponent } from './moviedetails/moviedetails.component';
 import { FormsModule } from '@angular/forms';
 import { ResultsComponent } from './results/results.component';
+import { SearchComponent } from './search/search.component';
 
 
 @NgModule({
@@ -29,8 +29,8 @@ import { ResultsComponent } from './results/results.component';
     ComingsoonComponent,
     NowplayingComponent,
     HomeComponent,
-    MoviedetailsComponent,
-    ResultsComponent
+    ResultsComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,

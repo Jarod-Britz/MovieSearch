@@ -24,3 +24,7 @@ mat-toolbar{
   .example-spacer {
     flex: 1 1 auto;
   }
+
+  @media screen and (max-width: 400px){
+      
+  }

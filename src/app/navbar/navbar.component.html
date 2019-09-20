@@ -19,10 +19,12 @@
       <mat-icon>theaters</mat-icon>
       <span>Now Playing</span>
     </button>
+    <button mat-menu-item routerLink="search">
+      <mat-icon>search</mat-icon>
+      <span>Search</span>
+    </button>
   </mat-menu>
   <span class="example-spacer"></span>
-  <div class="container">
-    <input type="text" placeholder="Search..." [(ngModel)]="movieName">
-    <button mat-stroked-button (click)="getResults()">Search</button>
-  </div>
+  <img src="../../assets/Free_Sample_By_Wix (2).jpg" alt="logo">
 </mat-toolbar>
+
