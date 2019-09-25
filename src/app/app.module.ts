@@ -9,16 +9,20 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { MatToolbarModule,
   MatMenuModule,
   MatIconModule,
+  MatInputModule,
   MatCardModule,
-  MatButtonModule } from '@angular/material';
+  MatButtonModule, 
+  MatAutocompleteModule,
+  MatFormFieldModule} from '@angular/material';
 import { TrendingComponent } from './trending/trending.component';
 import { ComingsoonComponent } from './comingsoon/comingsoon.component';
 import { NowplayingComponent } from './nowplaying/nowplaying.component';
 import { HomeComponent } from './home/home.component';
 import { MovieService } from './services/movie.service';
-import { FormsModule } from '@angular/forms';
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { ResultsComponent } from './results/results.component';
 import { SearchComponent } from './search/search.component';
+import { MoviedetailsComponent } from './moviedetails/moviedetails.component';
 
 
 @NgModule({
@@ -27,6 +31,7 @@ import { SearchComponent } from './search/search.component';
     NavbarComponent,
     TrendingComponent,
     ComingsoonComponent,
+    MoviedetailsComponent,
     NowplayingComponent,
     HomeComponent,
     ResultsComponent,
@@ -35,14 +40,18 @@ import { SearchComponent } from './search/search.component';
   imports: [
     BrowserModule,
     FormsModule,
+    ReactiveFormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
     AppRoutingModule,
+    MatInputModule,
     MatToolbarModule,
     MatMenuModule,
     MatIconModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    MatAutocompleteModule,
+    MatFormFieldModule
   ],
   providers: [MovieService],
   bootstrap: [AppComponent]

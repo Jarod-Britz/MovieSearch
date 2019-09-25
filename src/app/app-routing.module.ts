@@ -6,6 +6,7 @@ import { NowplayingComponent } from './nowplaying/nowplaying.component';
 import { ComingsoonComponent } from './comingsoon/comingsoon.component';
 import { ResultsComponent } from './results/results.component';
 import { SearchComponent } from './search/search.component';
+import { MoviedetailsComponent } from './moviedetails/moviedetails.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -13,7 +14,8 @@ const routes: Routes = [
   {path: 'nowplaying', component: NowplayingComponent},
   {path: 'comingsoon', component: ComingsoonComponent},
   {path: 'results', component: ResultsComponent},
-  {path: 'search', component: SearchComponent}
+  {path: 'search', component: SearchComponent},
+  {path: 'movie-details', component: MoviedetailsComponent}
 ];
 
 @NgModule({

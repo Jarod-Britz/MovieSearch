@@ -28,7 +28,7 @@ cast;
     this.movieService.getPopularMovies()
     .subscribe((data) => {
       this.movies = data['results'];
-
+      
     })
 
 
